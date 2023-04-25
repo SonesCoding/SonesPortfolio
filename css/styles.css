@@ -1,0 +1,272 @@
+
+/* 	
+	Student Name: Lillian Sones
+	File Name: styles.css
+    Date: 02/10/2023
+*/
+
+/*CSS RESET*/
+
+html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav, article, aside, section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+ 
+
+ 
+ img{
+     display: block;
+     max-width: 100%;
+     height: auto;
+     padding: 2%;
+     align-self: center;
+ }
+
+ li a{
+    color:#e2b88d
+ }
+ 
+ body{
+    
+    background:linear-gradient(#302b29, #4b3e38, #507250);
+ }
+
+.jumbotron{
+    background-color: #507250;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+ 
+ /*********************************************/
+ /* Styles for basic Navigation bar and attributes thereof */
+ .navbar-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+ }
+ #toptext{
+    color: #c7bcb9;
+ }
+ 
+ nav h1{
+     color:#c7bcb9;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: large;
+     font-weight: bold;
+ }
+ 
+ nav li{
+     font-weight: bold;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 2em;
+ }
+ 
+ nav li a{
+     text-decoration: none;
+     color: #c7bcb9;
+ }
+ 
+ nav li:hover{
+     background-color: #947657;
+     color: #302b29;
+     border:#c7bcb9;
+     border-radius: 40%;
+ }
+ /*********************************************/
+ 
+ /*********************************************/
+ /* Styles for Main */
+ main{
+     font-family: 'Labrada', serif;
+     color: #c7bcb9;
+
+ 
+     text-align: center;
+     align-content: center;
+ 
+ 
+ }
+ 
+ main p {
+     padding: 2%;
+     font-size: 1.2em;
+ }
+
+ .col-sm-4{
+    color:#947657;
+     box-shadow: 5px 5px 5px 5px #292321;
+     background-color: #234223;
+     text-align: center;
+     padding: 2%;
+ }
+
+ .page-footer
+ 
+ /*********************************************/
+ 
+ /*********************************************/
+ /*minimal icon styling.*/
+/* .navbar-toggler-icon{
+ }
+ /*********************************************/
+ 
+ /*********************************************/
+ /* weird lil things that have custom stuff*/
+ /* should remain in general relative and compatible*/
+ 
+ 
+
+ .contact ul{
+     list-style-type: square ;
+ }
+ 
+ .contact a{
+
+         font-family:'Courier New', Courier, monospace;
+         color: #e2b88d;
+         text-decoration: dotted underline #193318;
+         font-size: 1em;
+ }
+ 
+ .contact h2{
+     text-align: center;
+     
+ }
+ /*********************************************/
+ 
+ 
+ 
+ /*********************************************/
+ /*Media Queries*/
+ /*Currently, the desktop query is the default.
+ This is what works for me and this website right now.
+ 
+ But there are at least 2 different media queries. */
+ 
+ /*Styles for Mobile*/
+ @media(max-width:480px){
+ 
+         /* Choose Display*/
+         .mobileDisplay{
+             display: block;
+         }
+       
+         .tabletDisplay{
+             display: none;
+         }
+ 
+         .deskDisplay{
+             display: none;
+         }
+       
+   /* Rules */
+ 
+     .navbar h1{
+         font-size: 1em;
+
+     }
+ 
+   nav li {
+     border-top: none;
+     display: inline-block;
+     text-align: center;
+     padding: .2em 3em 0em;
+   }
+ 
+     nav{
+         max-width: 100%
+     }
+ 
+     nav li a{
+ 
+         font-size: .5em;
+     }
+
+ 
+     }
+ 
+ 
+ 
+ /* Styles for Tablet  */
+ @media screen and (min-width:481px){
+ 
+         /* Choose Display*/
+         .tabletDisplay{
+         display: block;
+         }
+     
+         .mobileDisplay{
+         display: none;
+         }
+ 
+         .deskDisplay{
+             display: none;
+         }
+ 
+         .navbar a.icon {
+             display: none;
+ 
+           }
+ /* Rules */
+ 
+     nav li {
+       border-top: none;
+       display: inline-block;
+       font-size: 1.25em;
+     }
+     
+     nav li a {
+       padding: 0.5em;
+     }
+ 
+     }
+ 
+ 
+ 
+ /* Styles for Desktop  */
+ @media screen and (min-width:1015px){
+ 
+         /* Choose Display*/
+         .deskDisplay{
+           display: block;
+         }
+         
+         .mobileDisplay{
+           display: none;
+         }
+     
+         .tabletDisplay{
+             display: none;
+           }
+           .navbar a.icon {
+             display: none;}
+           
+     
+ /* Rules */
+         
+ }
+ /*********************************************/
+ 
+ 
+ 
+ 
+ /*********************************************/
+ /* You made  it to the bottom of the styles */
+ /* Basic Footer styles */
+ 
+ footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+     background-color: #193318;
+     color: #795e43;
+
+     font-size: small;
+ }
+ 
+ footer a{
+     color: #e2b88d;
+     text-decoration: underline;
+ }
+ /*********************************************/
